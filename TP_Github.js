@@ -4,8 +4,8 @@
 // @description  Add style to GITHUB
 // @author       Jliegeois
 // @source       https://github.com/jeliegeois-Alltricks/tampermonkey/blob/main/TP_Github.js
-// @downloadURL  https://github.com/jeliegeois-Alltricks/tampermonkey/blob/main/TP_Github.js
-// @updateURL    https://github.com/jeliegeois-Alltricks/tampermonkey/blob/main/TP_Github.js
+// @downloadURL  https://github.com/jeliegeois-Alltricks/tampermonkey/raw/main/TP_Github.js
+// @updateURL    https://github.com/jeliegeois-Alltricks/tampermonkey/raw/main/TP_Github.js
 // @match        https://github.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
