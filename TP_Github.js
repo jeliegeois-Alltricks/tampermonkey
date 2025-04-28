@@ -58,19 +58,21 @@ function addColorGitHub(el) {
             }
         }
 
-        if ($(this).data('path').startsWith('appsv3/symfony/backoffice')) {
-            if ($(this).data('path').endsWith('Test.php')) {
-                $(this).css("background-color", "#465469");
-            } else {
-                $(this).css("background-color", "#2d4539");
+        if ($(this).data('path').startsWith('appsv3')) {
+            if ($(this).data('path').contains('api/backoffice') || $(this).data('path').contains('symfony/backoffice')) {
+                if ($(this).data('path').endsWith('Test.php')) {
+                    $(this).css("background-color", "#465469");
+                } else {
+                    $(this).css("background-color", "#2d4539");
+                }
             }
-        }
 
-        if ($(this).data('path').startsWith('appsv3/symfony/tunnel')) {
-            if ($(this).data('path').endsWith('Test.php')) {
-                $(this).css("background-color", "#465469");
-            } else {
-                $(this).css("background-color", "#123569");
+            if ($(this).data('path').contains('symfony/tunnel') || $(this).data('path').contains('symfony/tunnel')) {
+                if ($(this).data('path').endsWith('Test.php')) {
+                    $(this).css("background-color", "#465469");
+                } else {
+                    $(this).css("background-color", "#123569");
+                }
             }
         }
     });
