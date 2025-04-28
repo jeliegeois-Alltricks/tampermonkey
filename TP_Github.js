@@ -51,11 +51,27 @@ waitForKeyElements("#files", addColorGitHub);
 function addColorGitHub(el) {
     el.find('.file-header').each(function () {
         if ($(this).data('path').startsWith('apps/')) {
-            $(this).css("background-color", "#650101");
+            if ($(this).data('path').endsWith('Test.php')) {
+                $(this).css("background-color", "#613636");
+            } else {
+                $(this).css("background-color", "#650101");
+            }
         }
 
-        if ($(this).data('path').startsWith('appsv3/')) {
-            $(this).css("background-color", "#123569");
+        if ($(this).data('path').startsWith('appsv3/symfony/backoffice')) {
+            if ($(this).data('path').endsWith('Test.php')) {
+                $(this).css("background-color", "#465469");
+            } else {
+                $(this).css("background-color", "#2d4539");
+            }
+        }
+
+        if ($(this).data('path').startsWith('appsv3/symfony/tunnel')) {
+            if ($(this).data('path').endsWith('Test.php')) {
+                $(this).css("background-color", "#465469");
+            } else {
+                $(this).css("background-color", "#123569");
+            }
         }
     });
 }
