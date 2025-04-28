@@ -67,7 +67,7 @@ function addColorGitHub(el) {
                 }
             }
 
-            if ($(this).data('path').includes('symfony/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
+            if ($(this).data('path').includes('api/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
                 if ($(this).data('path').endsWith('Test.php')) {
                     $(this).css("background-color", "#465469");
                 } else {
