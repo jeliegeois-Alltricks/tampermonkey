@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jliegeois_TP_GITHUB
-// @version      1.0.3
+// @version      1.0.4
 // @description  Add style to GITHUB
 // @author       Jliegeois
 // @source       https://github.com/jeliegeois-Alltricks/tampermonkey/
@@ -53,8 +53,10 @@ function addColorGitHub(el) {
         if ($(this).data('path').startsWith('apps/')) {
             if ($(this).data('path').endsWith('Test.php')) {
                 $(this).css("background-color", "#613636");
+                $(this).css("color", "white");
             } else {
                 $(this).css("background-color", "#650101");
+                $(this).css("color", "white");
             }
         }
 
@@ -62,16 +64,20 @@ function addColorGitHub(el) {
             if ($(this).data('path').includes('api/backoffice') || $(this).data('path').includes('symfony/backoffice')) {
                 if ($(this).data('path').endsWith('Test.php')) {
                     $(this).css("background-color", "#465469");
+                    $(this).css("color", "white");
                 } else {
                     $(this).css("background-color", "#2d4539");
+                    $(this).css("color", "white");
                 }
             }
 
             if ($(this).data('path').includes('api/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
                 if ($(this).data('path').endsWith('Test.php')) {
                     $(this).css("background-color", "#465469");
+                    $(this).css("color", "white");
                 } else {
                     $(this).css("background-color", "#123569");
+                    $(this).css("color", "white");
                 }
             }
         }
