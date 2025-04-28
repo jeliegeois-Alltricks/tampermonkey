@@ -53,10 +53,10 @@ function addColorGitHub(el) {
         if ($(this).data('path').startsWith('apps/')) {
             if ($(this).data('path').endsWith('Test.php')) {
                 $(this).css("background-color", "#613636");
-                $(this).css("color", "white");
+                changeColorText($(this), 'white')
             } else {
                 $(this).css("background-color", "#650101");
-                $(this).css("color", "white");
+                changeColorText($(this), 'white')
             }
         }
 
@@ -67,19 +67,25 @@ function addColorGitHub(el) {
                     $(this).css("color", "white");
                 } else {
                     $(this).css("background-color", "#2d4539");
-                    $(this).css("color", "white");
+                    changeColorText($(this), 'white')
                 }
             }
 
             if ($(this).data('path').includes('api/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
                 if ($(this).data('path').endsWith('Test.php')) {
                     $(this).css("background-color", "#465469");
-                    $(this).css("color", "white");
+                    changeColorText($(this), 'white')
                 } else {
                     $(this).css("background-color", "#123569");
-                    $(this).css("color", "white");
+                    changeColorText($(this), 'white')
                 }
             }
         }
+    });
+}
+
+function changeColorText(e, color) {
+    e.find('label, a').each(function () {
+        (this).css("color", color);
     });
 }
