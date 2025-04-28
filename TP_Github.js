@@ -86,6 +86,6 @@ function addColorGitHub(el) {
 
 function changeColorText(e, color) {
     e.find('label, a').each(function () {
-        (this).css("color", color);
+        $(this).css("color", color);
     });
 }
