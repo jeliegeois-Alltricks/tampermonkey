@@ -51,11 +51,11 @@ waitForKeyElements("#files", addColorGitHub);
 function addColorGitHub(el) {
     el.find('.file-header').each(function () {
         if ($(this).data('path').startsWith('apps/')) {
-            $(this).css("background-color", "#084174");
+            $(this).css("background-color", "#650101");
         }
 
         if ($(this).data('path').startsWith('appsv3/')) {
-            $(this).css("background-color", "#09624e");
+            $(this).css("background-color", "#123569");
         }
     });
 }
