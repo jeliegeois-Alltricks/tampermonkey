@@ -59,7 +59,7 @@ function addColorGitHub(el) {
         }
 
         if ($(this).data('path').startsWith('appsv3')) {
-            if ($(this).data('path').contains('api/backoffice') || $(this).data('path').contains('symfony/backoffice')) {
+            if ($(this).data('path').includes('api/backoffice') || $(this).data('path').includes('symfony/backoffice')) {
                 if ($(this).data('path').endsWith('Test.php')) {
                     $(this).css("background-color", "#465469");
                 } else {
@@ -67,7 +67,7 @@ function addColorGitHub(el) {
                 }
             }
 
-            if ($(this).data('path').contains('symfony/tunnel') || $(this).data('path').contains('symfony/tunnel')) {
+            if ($(this).data('path').includes('symfony/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
                 if ($(this).data('path').endsWith('Test.php')) {
                     $(this).css("background-color", "#465469");
                 } else {
