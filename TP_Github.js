@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jliegeois_TP_GITHUB
-// @version      1.0.2
+// @version      1.0.3
 // @description  Add style to GITHUB
 // @author       Jliegeois
 // @source       https://github.com/jeliegeois-Alltricks/tampermonkey/
