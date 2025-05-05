@@ -65,40 +65,40 @@ function addColorGitHub(el) {
             if ($(this).data('path').includes('api/backoffice') || $(this).data('path').includes('symfony/backoffice')) {
                 if ($(this).data('path').includes('/tests/')) {
                     $(this).css("background-color", "#465469");
-                    $(this).css("color", "white");
+                    changeColorText($(this), 'white');
                 } else {
                     $(this).css("background-color", "#2d4539");
-                    changeColorText($(this), 'white')
+                    changeColorText($(this), 'white');
                 }
             }
 
             if ($(this).data('path').includes('api/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
                 if ($(this).data('path').includes('/tests/')) {
                     $(this).css("background-color", "#465469");
-                    changeColorText($(this), 'white')
+                    changeColorText($(this), 'white');
                 } else {
                     $(this).css("background-color", "#123569");
-                    changeColorText($(this), 'white')
+                    changeColorText($(this), 'white');
                 }
             }
 
             if ($(this).data('path').includes('api/frontoffice') || $(this).data('path').includes('symfony/frontoffice')) {
                 if ($(this).data('path').includes('/tests/')) {
                     $(this).css("background-color", "#59505b");
-                    $(this).css("color", "black");
+                    changeColorText($(this), 'white');
                 } else {
                     $(this).css("background-color", "#734779");
-                    changeColorText($(this), 'black')
+                    changeColorText($(this), 'white');
                 }
             }
 
             if ($(this).data('path').includes('symfony/common')) {
                 if ($(this).data('path').includes('/tests/')) {
                     $(this).css("background-color", "#b5b06f");
-                    $(this).css("color", "black");
+                    changeColorText($(this), 'black');
                 } else {
                     $(this).css("background-color", "#c9bf4b");
-                    changeColorText($(this), 'black')
+                    changeColorText($(this), 'black');
                 }
             }
         }
@@ -107,6 +107,6 @@ function addColorGitHub(el) {
 
 function changeColorText(e, color) {
     e.find('label, a').each(function () {
-        this.style.setProperty( 'color', color, 'important' );
+        this.style.setProperty('color', color, 'important');
     });
 }
