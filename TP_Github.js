@@ -34,7 +34,7 @@ if (targetNode) {
     const callback = (mutationList, observer) => {
         for (const mutation of mutationList) {
             if (mutation.type === "childList") {
-                addColorGitHub(targetNode)
+                addColorGitHub($(targetNode));
             }
         }
     };
