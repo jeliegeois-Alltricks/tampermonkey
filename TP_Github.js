@@ -50,6 +50,7 @@ if (targetNode) {
 waitForKeyElements("#files", addColorGitHub);
 
 function addColorGitHub(el) {
+    console.log(el);
     el.find('.file-header').each(function () {
         if ($(this).data('path').startsWith('apps/')) {
             if ($(this).data('path').endsWith('Test.php')) {
