@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jliegeois_TP_GITHUB
-// @version      1.0.8
+// @version      1.0.9
 // @description  Add style to GITHUB
 // @author       Jliegeois
 // @downloadURL  https://raw.githubusercontent.com/jeliegeois-Alltricks/tampermonkey/refs/heads/main/TP_Github.js
@@ -49,7 +49,6 @@ if (targetNode) {
 waitForKeyElements("#files", addColorGitHub);
 
 function addColorGitHub(el) {
-    console.log(el);
     el.find('.file-header').each(function () {
         if ($(this).data('path').startsWith('apps/')) {
             if ($(this).data('path').endsWith('Test.php')) {
