@@ -3,7 +3,6 @@
 // @version      1.0.8
 // @description  Add style to GITHUB
 // @author       Jliegeois
-// @source       https://github.com/jeliegeois-Alltricks/tampermonkey/
 // @downloadURL  https://raw.githubusercontent.com/jeliegeois-Alltricks/tampermonkey/refs/heads/main/TP_Github.js
 // @updateURL    https://raw.githubusercontent.com/jeliegeois-Alltricks/tampermonkey/refs/heads/main/TP_Github.js
 // @match        https://github.com/*
