@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jliegeois_TP_GITHUB
-// @version      1.0.7
+// @version      1.0.8
 // @description  Add style to GITHUB
 // @author       Jliegeois
 // @source       https://github.com/jeliegeois-Alltricks/tampermonkey/
@@ -63,7 +63,7 @@ function addColorGitHub(el) {
 
         if ($(this).data('path').startsWith('appsv3')) {
             if ($(this).data('path').includes('api/backoffice') || $(this).data('path').includes('symfony/backoffice')) {
-                if ($(this).data('path').endsWith('Test.php')) {
+                if ($(this).data('path').includes('/tests/')) {
                     $(this).css("background-color", "#465469");
                     $(this).css("color", "white");
                 } else {
@@ -73,12 +73,32 @@ function addColorGitHub(el) {
             }
 
             if ($(this).data('path').includes('api/tunnel') || $(this).data('path').includes('symfony/tunnel')) {
-                if ($(this).data('path').endsWith('Test.php')) {
+                if ($(this).data('path').includes('/tests/')) {
                     $(this).css("background-color", "#465469");
                     changeColorText($(this), 'white')
                 } else {
                     $(this).css("background-color", "#123569");
                     changeColorText($(this), 'white')
+                }
+            }
+
+            if ($(this).data('path').includes('api/frontoffice') || $(this).data('path').includes('symfony/frontoffice')) {
+                if ($(this).data('path').includes('/tests/')) {
+                    $(this).css("background-color", "#59505b");
+                    $(this).css("color", "black");
+                } else {
+                    $(this).css("background-color", "#734779");
+                    changeColorText($(this), 'black')
+                }
+            }
+
+            if ($(this).data('path').includes('symfony/common')) {
+                if ($(this).data('path').includes('/tests/')) {
+                    $(this).css("background-color", "#b5b06f");
+                    $(this).css("color", "black");
+                } else {
+                    $(this).css("background-color", "#c9bf4b");
+                    changeColorText($(this), 'black')
                 }
             }
         }
