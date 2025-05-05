@@ -64,7 +64,7 @@ function addColorGitHub(el) {
         if ($(this).data('path').startsWith('appsv3')) {
             if ($(this).data('path').includes('api/backoffice') || $(this).data('path').includes('symfony/backoffice')) {
                 if ($(this).data('path').includes('/tests/')) {
-                    $(this).css("background-color", "#465469");
+                    $(this).css("background-color", "#3c4b43");
                     changeColorText($(this), 'white');
                 } else {
                     $(this).css("background-color", "#2d4539");
